@@ -27,8 +27,10 @@ def process_guess(letter, board, word):
             letterFound = True
             board[i] = letter
     if letterFound == True:
-        return "Well done! '"+letter+"' is in the word"
+        print("Well done! '"+letter+"' is in the word")
+        return True
     if letterFound == False:
-        return "Sorry, '"+letter+"' is not in the word"
+        print("Sorry, '"+letter+"' is not in the word")
+        return False
 
 
